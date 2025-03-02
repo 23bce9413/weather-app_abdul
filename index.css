@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #0066cc;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+}
+.search-bar {
+    margin-top: 10px;
+}
+#location-input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+}
+button {
+    padding: 10px;
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #004094;
+}
+#current-weather {
+    text-align: center;
+    margin-top: 20px;
+}
+.weather-info img {
+    width: 80px;
+    height: 80px;
+}
+.unit-toggle button {
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: #ddd;
+}
+#hourly-forecast, #five-day-forecast {
+    margin-top: 30px;
+    padding: 10px;
+}
+.hourly-list, .forecast-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hour-card, .forecast-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100px;
+}
+@media (max-width:850px) {
+    .hour-card, .forecast-card{
+        width: 90px;
+    }
+}
+@media (max-width:754px) {
+    .hour-card, .forecast-card{
+        width: 80px;
+    }
+}
+@media (max-width:674px) {
+    .hour-card, .forecast-card{
+        width: 70px;
+    }
+}
+@media (max-width:593px) {
+    .hour-card, .forecast-card{
+        width: 90px;
+        overflow: scroll;
+    }
+}
